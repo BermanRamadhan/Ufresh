@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:id="@+id/view__swipe"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#fd9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/guideline"
+        app:layout_constraintGuide_percent=".8"
+        />
+
+    <ImageView
+        android:id="@+id/imageintroswipe"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent=".3"
+        app:layout_constraintWidth_percent=".65"
+        app:layout_constraintHorizontal_bias=".1"
+        app:layout_constraintVertical_bias=".3"
+        android:src="@drawable/img1"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/typog__swipe__intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fresh is"
+        android:textSize="50sp"
+        app:layout_constraintHorizontal_bias=".1"
+        app:layout_constraintEnd_toEndOf="@+id/imageintroswipe"
+        app:layout_constraintStart_toStartOf="@+id/imageintroswipe"
+        app:layout_constraintTop_toBottomOf="@+id/imageintroswipe" />
+
+    <TextView
+        android:id="@+id/typog__swipe__intro2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Everything"
+        android:textColor="@color/black"
+        android:textSize="61sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/typog__swipe__intro"
+        app:layout_constraintTop_toBottomOf="@+id/typog__swipe__intro" />
+
+    <TextView
+        android:id="@+id/typog__swipe__intro3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="lasmlkmls lsakdmakslmdas laskdmlksam
+        dlkas dalskmdlksamd asdmlkasmdas
+        dlaskdmsalkmdlas dlasdm"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/typog__swipe__intro2"
+        app:layout_constraintTop_toBottomOf="@+id/typog__swipe__intro2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

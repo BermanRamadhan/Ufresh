@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ke__keranjang"
+        android:title="Ke Keranjang" />
+    <item
+        android:id="@+id/beli__sekarang"
+        android:title="Beli Sekarang" />
+</menu>

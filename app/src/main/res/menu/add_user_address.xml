@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/add__new__user__address"
+        android:icon="@drawable/addlocation"
+        android:iconTint="@color/white"
+        android:title="Item"
+        app:showAsAction="always" />
+</menu>

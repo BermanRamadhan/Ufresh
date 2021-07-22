@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mynav"
+    app:startDestination="@id/splashScreen3">
+
+
+    <activity
+        android:id="@+id/splashScreen3"
+        android:name="com.uninet.ufresh.SplashScreen"
+        android:label="activity_splash_screen"
+        tools:layout="@layout/activity_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreen3_to_swipe04"
+            app:destination="@id/swipe04" />
+    </activity>
+    <fragment
+        android:id="@+id/swipe04"
+        android:name="com.uninet.ufresh.swipe0"
+        android:label="fragment_swipe0"
+        tools:layout="@layout/fragment_swipe0" />
+</navigation>

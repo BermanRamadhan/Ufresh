@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstLocationActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/map_color_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temukan lokasi kamu"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Temukan lokasi kamu untuk menemukan pasar terdekat"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintWidth_percent=".7" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/get_loc"
+        android:text="Temukan Lokasimu"
+        android:layout_marginTop="10dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/p"
+        app:layout_constraintWidth_percent=".8"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/login__email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:text="Lokasi Kamu"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/get_loc"
+        app:layout_constraintTop_toBottomOf="@+id/get_loc"
+        app:layout_constraintVertical_bias=".1" />
+
+    <EditText
+        android:id="@+id/lokasi_kamu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Silahkann Masukan Email"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/get_loc"
+        app:layout_constraintStart_toStartOf="@+id/get_loc"
+        app:layout_constraintTop_toBottomOf="@+id/login__email"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <TextView
+        android:id="@+id/area_kamu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:text="Area Kamu"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/get_loc"
+        app:layout_constraintTop_toBottomOf="@+id/lokasi_kamu"
+        app:layout_constraintVertical_bias=".1" />
+
+    <EditText
+        android:id="@+id/etsigninemail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Silahkann Masukan Email"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/get_loc"
+        app:layout_constraintStart_toStartOf="@+id/get_loc"
+        app:layout_constraintTop_toBottomOf="@+id/area_kamu"
+        app:layout_constraintVertical_bias="0.02" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submitlocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintVertical_bias=".2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/signinwith_fb"
+        android:text="Submit"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/etsigninemail"
+        app:layout_constraintStart_toStartOf="@+id/etsigninemail"
+        app:layout_constraintTop_toBottomOf="@+id/etsigninemail" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

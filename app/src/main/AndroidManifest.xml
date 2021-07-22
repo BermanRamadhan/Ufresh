@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.uninet.ufresh">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/pip"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/pip"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ufresh">
+        <activity android:name=".UserAddAddressActivity"></activity>
+        <activity android:name=".UserAddressActivity" />
+        <activity android:name=".CheckOutActivity" />
+        <activity android:name=".DetailPesananActivity" />
+        <activity android:name=".ChatActivity" />
+        <activity android:name=".CartActivity" />
+        <activity android:name=".Detail__Toko" />
+        <activity android:name=".Profil__Toko" />
+        <activity android:name=".Detail__Produk" />
+        <activity android:name=".SwipedIntro" />
+        <activity android:name=".ShopListActivity" />
+        <activity android:name=".MarketListByLocationActivity" />
+        <activity android:name=".FirstLocationActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".OtpActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".NoHpActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".FirstTimeActivity" />
+        <activity android:name=".IntroActivity" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/cac_chat"
+        android:icon="@drawable/ic_round_chat_bubble_24"
+        android:iconTint="@color/ijo_ufresh"
+        android:title="Chat"
+        app:showAsAction="always" />
+</menu>

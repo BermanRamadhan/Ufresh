@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="@drawable/bg_profil_utils">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/detail__pesanan__card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/toko__pic__pesanan"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/pasaer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nama__toko__pesanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="toko 56"
+            app:layout_constraintBottom_toBottomOf="@id/toko__pic__pesanan"
+            app:layout_constraintStart_toEndOf="@+id/toko__pic__pesanan"
+            app:layout_constraintTop_toTopOf="@+id/toko__pic__pesanan" />
+
+        <TextView
+            android:id="@+id/nama__product__pesanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Tomat segar dari pegunungan"
+            app:layout_constraintBottom_toBottomOf="@+id/img__product__pesanan"
+            app:layout_constraintStart_toEndOf="@+id/img__product__pesanan"
+            app:layout_constraintTop_toTopOf="@+id/img__product__pesanan"
+            app:layout_constraintVertical_bias="0" />
+
+        <TextView
+            android:id="@+id/nama__product__pesanan__lainnya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="dan 2+ Product Lainnya"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/img__product__pesanan"
+            app:layout_constraintStart_toEndOf="@+id/img__product__pesanan"
+            app:layout_constraintTop_toBottomOf="@+id/nama__product__pesanan"
+            app:layout_constraintVertical_bias="0" />
+
+        <TextView
+            android:id="@+id/quantity__pesanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="x1"
+            app:layout_constraintBottom_toBottomOf="@+id/img__product__pesanan"
+            app:layout_constraintEnd_toEndOf="@+id/status__pesanan"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toEndOf="@+id/img__product__pesanan"
+            app:layout_constraintTop_toTopOf="@+id/img__product__pesanan"
+            app:layout_constraintVertical_bias="0" />
+
+        <TextView
+            android:id="@+id/harga__product__pesanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Rp49.500"
+            android:textColor="#ee2020"
+            app:layout_constraintBottom_toBottomOf="@+id/img__product__pesanan"
+            app:layout_constraintEnd_toEndOf="@+id/status__pesanan"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toEndOf="@+id/img__product__pesanan"
+            app:layout_constraintTop_toBottomOf="@+id/nama__product__pesanan"
+            app:layout_constraintVertical_bias="1" />
+
+        <TextView
+            android:id="@+id/status__pesanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Status"
+            app:layout_constraintBottom_toBottomOf="@id/toko__pic__pesanan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toEndOf="@+id/toko__pic__pesanan"
+            app:layout_constraintTop_toTopOf="@+id/toko__pic__pesanan" />
+
+        <ImageView
+            android:id="@+id/img__product__pesanan"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/tomamto"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toko__pic__pesanan" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/action__pesanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/ijo_ufresh"
+            android:elevation="10dp"
+            android:text="Bayar"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/harga__product__pesanan"
+            app:layout_constraintTop_toBottomOf="@+id/harga__product__pesanan" />
+
+        <TextView
+            android:id="@+id/kurir__pesanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:text="Kurir"
+            android:textColor="@color/ijo_terang"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img__product__pesanan" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
